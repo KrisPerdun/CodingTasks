@@ -1,0 +1,47 @@
+body {
+    min-height: 100vh;
+    background-color: #445760;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box {
+    min-width: 200px;
+    max-width: 600px;
+    width: 0%;
+    min-height: 180px;
+    max-height: 540px;
+    height: auto;
+    border: 2px solid #2c2c2c;
+    background-color: #4935dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    opacity: 0;
+    transform: rotate(0);
+    animation-name: showUp_kris;
+    animation-duration: 3500ms;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  .box p {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+  }
+  
+  @keyframes showUp_kris {
+    from {
+      opacity: 0;
+      transform: rotate(0);
+      width: 0%;
+      height: auto;
+    }
+     to {
+      opacity: 1;
+      transform: rotate(360deg);
+      width: 100%;
+      height: auto;
+    }
+  }

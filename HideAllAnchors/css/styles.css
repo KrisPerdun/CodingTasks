@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+    .custom-navigation a {
+        display: none; /* Hides all a tags */
+    }
+
+    .custom-navigation .custom-nav-logo, 
+    .custom-navigation a[href="#interest-list"] {
+        display: inline-block; /* Keeps Email and Logo visible */
+    }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hide all anchors</title>
+</head>
+<body>
+<!--
+  Task:  Create a rule to Hide all anchors or `<a>` elements in mobile except for `logo` and `email icon`
+      it should render all the elements in Tablet and Desktop.
+  Hints for Media queries:
+      @media (width <= 768px) -> mobile
+      @media (width < 1024px) -> mobile and tablet
+      @media (768px <= width < 1024px) -> tablet
+      @media (width >= 768px) -> tablet and desktop
+      @media (width >= 1024px) -> desktop
+-->
+
+<!-- simple navigation -->
+<div class="custom-navigation flex">
+    <!-- logo should be visible in mobile -->
+    <a href="#headerlogo" class="custom-nav-logo nav-item">
+        <img src="/logo.png" alt="page logo">
+    </a>
+    <!-- this is a simple divider to split navigation menu -->
+    <div class="divider"></div>
+    <a href="#intro" data-anchor="#intro" class="active">Intro</a> <!-- hide in mobile -->
+    <a href="#location" data-anchor="#location">Location</a> <!-- hide in mobile -->
+    <a href="#homes" data-anchor="#homes">Homes</a> <!-- hide in mobile -->
+    <a href="#amenities" data-anchor="#amenities">Amenities</a> <!-- hide in mobile -->
+    <a href="#team" data-anchor="#team">The Team</a> <!-- hide in mobile -->
+    <!-- contact-icon should be visible in mobile -->
+    <a href="#interest-list" data-anchor="#interest-list">
+        <img src="/email-icon.svg" alt="email icon">
+    </a>
+</div>
+</body>
+</html>
